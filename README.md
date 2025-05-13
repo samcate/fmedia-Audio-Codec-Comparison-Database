@@ -1,11 +1,12 @@
 # fmedia-Audio-Codec-Comparison-Database
-This database was created for Evaluating Audio-Compression Techniques, and reference to Simon Zolin's work https://stsaz.github.io/fmedia/audio-formats/
+This database was created for Evaluation of Audio Compression Codecs.
 
-More than 50 music tracks from a wide variety of genres were encoded by multiple audio codecs. All tracks include:
+This dataset contains benchmarks of various audio codecs (FLAC, MP3, AAC, etc.) across different songs, including bitrate, compression ratio, encode/decode time, and speed.
 
 |METADATA|
 |---------|
 |Track name|
+|Artist|
 |Genre|
 |Uncompressed file size (bytes)|
 |Samples no.|
@@ -29,8 +30,7 @@ Compression ratio (%) = ((Uncompressed file size) / (Compressd file size)) * 100
 
 Speed (samples/μs) = (2*Sample size)/(Recorded time * 1000000)
 
-NOTE: 
-
--The .xlsx file uploaded is only temporary. A JSON query of the file will be implemented in the future
-
--AAC cannot encode tracks that has a sampling rate above 96kHz. So all tracks that have higher sampling rate than 96kHz was down-sampled
+# How to Contribute
+1. Fork this repository
+2. Add your song entry to the CSV file
+3. Submit a pull request (PR) with your changes
